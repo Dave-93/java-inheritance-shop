@@ -5,6 +5,12 @@ public class Cuffie extends Prodotto {
     protected boolean wireless;
     //
 
+    //COSTRUTTORE con PARAMETRI
+    public Cuffie(String nome, double prezzo, double iva, boolean wireless){
+        super(nome, prezzo, iva);
+    }
+    //
+
     //Getter e Setter
     public String getColore(){
         return colore;

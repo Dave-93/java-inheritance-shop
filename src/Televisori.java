@@ -5,6 +5,12 @@ public class Televisori extends Prodotto {
     protected boolean smart;
     //
 
+    //COSTRUTTORE con PARAMETRI
+    public Televisori(String nome, double prezzo, double iva, boolean smart){
+        super(nome, prezzo, iva);
+    }
+    //
+
     //Getter e Setter
     public int getDimensione(){
         return dimensione;

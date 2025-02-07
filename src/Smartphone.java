@@ -5,6 +5,12 @@ public class Smartphone extends Prodotto{
     protected int quantitaMemoria;
     //
 
+    //COSTRUTTORE con PARAMETRI
+    public Smartphone(String nome, double prezzo, double iva, int quantitaMemoria){
+        super(nome, prezzo, iva);
+    }
+    //
+
     //Getter e Setter
     public int getCodiceImei(){
         return codiceImei;
