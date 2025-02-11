@@ -19,11 +19,16 @@ public class Cuffie extends Prodotto {
         this.colore = colore;
     }
 
-    public boolean getWireless(){
+    public boolean isWireless(){
         return wireless;
     }
     public void setWireless(int wireless){
         this.wireless = wireless;
     }
     //
+
+    @Override
+    public String toString() {
+        return super.toString() + " Cuffie " + getNome() + ", con codice " + getCodice() + ", ha un prezzo comprensivo di IVA di " + prezzoIvato();
+    }
 }

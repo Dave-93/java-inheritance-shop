@@ -19,7 +19,7 @@ public class Televisori extends Prodotto {
         this.dimensione = dimensione;
     }
 
-    public boolean getSmart(){
+    public boolean isSmart(){
         return smart;
     }
     public void setSmart(int smart){
