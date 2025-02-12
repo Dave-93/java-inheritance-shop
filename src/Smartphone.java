@@ -1,7 +1,7 @@
 public class Smartphone extends Prodotto{
     
     //ATTRIBUTI
-    protected int codiceImei;
+    protected String codiceImei;
     protected int quantitaMemoria;
     //
 
@@ -12,10 +12,10 @@ public class Smartphone extends Prodotto{
     //
 
     //Getter e Setter
-    public int getCodiceImei(){
+    public String getCodiceImei(){
         return codiceImei;
     }
-    public void setCodiceImei(int codiceImei){
+    public void setCodiceImei(String codiceImei){
         this.codiceImei = codiceImei;
     }
 
@@ -24,6 +24,11 @@ public class Smartphone extends Prodotto{
     }
     public void setQuantitaMemoria(int quantitaMemoria){
         this.quantitaMemoria = quantitaMemoria;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Smartphone " + getNome() + ", con codice " + getCodice() + " ed ha un prezzo comprensivo di IVA di " + prezzoIvato();
     }
     //
 }

@@ -42,10 +42,6 @@ public class Carrello {
         this.televisori = televisori;
     }
     
-    public String toString() {
-        return "Il prodotto selezionato è ";
-    }
-    
 	public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

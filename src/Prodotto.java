@@ -78,5 +78,10 @@ public class Prodotto {
         String nomeConcatenato = codiceConvertitaInString.concat("-").concat(nome);//concatena una o più stringhe partendo da quella iniziale
         return nomeConcatenato;
     }
+
+    @Override
+    public String toString() {
+        return "Il prodotto selezionato è ";
+    }
     //
 }

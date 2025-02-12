@@ -22,13 +22,13 @@ public class Cuffie extends Prodotto {
     public boolean isWireless(){
         return wireless;
     }
-    public void setWireless(int wireless){
+    public void setWireless(boolean wireless){
         this.wireless = wireless;
     }
     //
 
     @Override
     public String toString() {
-        return super.toString() + " Cuffie " + getNome() + ", con codice " + getCodice() + ", ha un prezzo comprensivo di IVA di " + prezzoIvato();
+        return super.toString() + "Cuffie " + getNome() + ", con codice " + getCodice() + " ed ha un prezzo comprensivo di IVA di " + prezzoIvato();
     }
 }

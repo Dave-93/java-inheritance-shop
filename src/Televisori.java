@@ -1,7 +1,7 @@
 public class Televisori extends Prodotto {
     
     //ATTRIBUTI
-    protected int dimensione;
+    protected int pollici;
     protected boolean smart;
     //
 
@@ -12,18 +12,23 @@ public class Televisori extends Prodotto {
     //
 
     //Getter e Setter
-    public int getDimensione(){
-        return dimensione;
+    public int getPollici(){
+        return pollici;
     }
-    public void setDimensione(int dimensione){
-        this.dimensione = dimensione;
+    public void setPollici(int pollici){
+        this.pollici = pollici;
     }
 
     public boolean isSmart(){
         return smart;
     }
-    public void setSmart(int smart){
+    public void setSmart(boolean smart){
         this.smart = smart;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Televisore " + getNome() + ", con codice " + getCodice() + " ed ha un prezzo comprensivo di IVA di " + prezzoIvato();
     }
     //
 }
