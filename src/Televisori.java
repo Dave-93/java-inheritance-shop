@@ -8,6 +8,7 @@ public class Televisori extends Prodotto {
     //COSTRUTTORE con PARAMETRI
     public Televisori(String nome, double prezzo, double iva, boolean smart){
         super(nome, prezzo, iva);
+        this.smart = smart;
     }
     //
 
@@ -28,7 +29,8 @@ public class Televisori extends Prodotto {
 
     @Override
     public String toString() {
-        return super.toString() + "Televisore " + getNome() + ", con codice " + getCodice() + " ed ha un prezzo comprensivo di IVA di " + prezzoIvato();
+        String smart = isSmart() ? " è smart" : " non è smart";
+        return super.toString() + "Televisore " + getNome() + ", con codice " + getCodice() + smart + " ed ha un prezzo comprensivo di IVA di " + prezzoIvato();
     }
     //
 }

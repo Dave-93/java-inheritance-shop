@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Carrello {
@@ -47,17 +46,25 @@ public class Carrello {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Scegli quale prodotto vuoi inserire");
         String scelta = scanner.next();
+        Prodotto prodotto = null;
 		switch(scelta){
-            case "cuffie": Cuffie cuffia = new Cuffie("RGB", 650, 22, true);
-                System.out.println(cuffia);
+            case "cuffie":
+                //Cuffie cuffia = new Cuffie("RGB", 650, 22, true);
+                //System.out.println(cuffia);
+                prodotto = new Cuffie("RGB", 650, 22, true);
                 break;
-            case "televisore": Televisori televisore = new Televisori("LG", 250, 22, true);
-                System.out.println(televisore);
+            case "televisore":
+                //Televisori televisore = new Televisori("LG", 250, 22, true);
+                //System.out.println(televisore);
+                prodotto = new Televisori("LG", 250, 22, true);
                 break;
-            case "smartphone": Smartphone smartphone = new Smartphone("Oppo", 600, 22, 512);
-                System.out.println(smartphone);
+            case "smartphone":
+                //Smartphone smartphone = new Smartphone("Oppo", 600, 22, 512);
+                //System.out.println(smartphone);
+                prodotto = new Smartphone("Oppo", 600, 22, 512);
                 break;
             default: System.out.println("Dati non corretti");
-        }            
+        }
+        System.out.println(prodotto);
     }
 }

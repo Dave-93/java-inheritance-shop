@@ -8,6 +8,7 @@ public class Smartphone extends Prodotto{
     //COSTRUTTORE con PARAMETRI
     public Smartphone(String nome, double prezzo, double iva, int quantitaMemoria){
         super(nome, prezzo, iva);
+        this.quantitaMemoria = quantitaMemoria;
     }
     //
 
@@ -28,7 +29,7 @@ public class Smartphone extends Prodotto{
 
     @Override
     public String toString() {
-        return super.toString() + "Smartphone " + getNome() + ", con codice " + getCodice() + " ed ha un prezzo comprensivo di IVA di " + prezzoIvato();
+        return super.toString() + "Smartphone " + getNome() + ", con codice " + getCodice() + " ha " + quantitaMemoria + " GB di memoria ed ha un prezzo comprensivo di IVA di " + prezzoIvato();
     }
     //
 }

@@ -62,11 +62,6 @@ public class Prodotto {
         this.codice = numero.nextInt(100, 900);//
     } 
    
-    public void prezzoBase(){
-        this.prezzo = prezzo;
-        System.out.println(String.format("Il prezzo base del prodotto %s è: %f", nome, prezzo));
-    }
-
     public double prezzoIvato(){
         double prezzoIvato = prezzo + (prezzo * iva)/100 ;
         return prezzoIvato;

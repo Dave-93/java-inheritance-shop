@@ -8,6 +8,7 @@ public class Cuffie extends Prodotto {
     //COSTRUTTORE con PARAMETRI
     public Cuffie(String nome, double prezzo, double iva, boolean wireless){
         super(nome, prezzo, iva);
+        this.wireless = wireless;
     }
     //
 
@@ -15,7 +16,7 @@ public class Cuffie extends Prodotto {
     public String getColore(){
         return colore;
     }
-    public void setColore(int colore){
+    public void setColore(String colore){
         this.colore = colore;
     }
 
@@ -29,6 +30,7 @@ public class Cuffie extends Prodotto {
 
     @Override
     public String toString() {
-        return super.toString() + "Cuffie " + getNome() + ", con codice " + getCodice() + " ed ha un prezzo comprensivo di IVA di " + prezzoIvato();
+        String wireless = isWireless() ? " sono wireless" : " sono wired";
+        return  super.toString() + "Cuffie " + getNome() + ", con codice " + getCodice() + wireless + " ed hanno un prezzo comprensivo di IVA di " + prezzoIvato();
     }
 }
